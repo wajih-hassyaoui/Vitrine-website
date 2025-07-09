@@ -30,16 +30,16 @@ const Footer = () => {
               >
                 <a href="/" className="relative">
                   <Image
-                    width={110}
+                    width={200}
                     height={80}
-                    src="/images/logo/logo-light.svg"
+                    src="/images/logo/logo.png"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
-                    width={110}
+                    width={200}
                     height={80}
-                    src="/images/logo/logo-dark.svg"
+                    src="/images/logo/logo.png"
                     alt="Logo"
                     className="hidden dark:block"
                   />
@@ -301,7 +301,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} . All rights reserved
               </p>
             </motion.div>
 

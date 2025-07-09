@@ -39,16 +39,16 @@ const Header = () => {
         <div className="flex items-center xl:w-auto">
           <a href="/">
             <Image
-              src="/images/logo/logo-dark.svg"
+              src="/images/logo/logo.png"
               alt="logo"
-              width={119.03}
+              width={90}
               height={30}
               className="hidden w-full dark:block"
             />
             <Image
-              src="/images/logo/logo-light.svg"
+              src="/images/logo/logo.png"
               alt="logo"
-              width={119.03}
+              width={95}
               height={30}
               className="w-full dark:hidden"
             />
@@ -109,12 +109,12 @@ const Header = () => {
                     <>
                       <button
                         onClick={() => setDropdownToggler(!dropdownToggler)}
-                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-blue-500"
+                        className="flex cursor-pointer items-center justify-between gap-3 hover:text-custom"
                       >
                         {menuItem.title}
                         <span>
                           <svg
-                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-blue-500"
+                            className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-custom"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                           >
@@ -124,7 +124,7 @@ const Header = () => {
                       </button>
                       <ul className={`dropdown ${dropdownToggler ? "flex" : ""}`}>
                         {menuItem.submenu.map((item, key) => (
-                          <li key={key} className="hover:text-blue-500">
+                          <li key={key} className="hover:text-custom">
                             <Link href={item.path || "#"}>{item.title}</Link>
                           </li>
                         ))}
@@ -135,8 +135,8 @@ const Header = () => {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? "text-blue-500 font-semibold"
-                          : "hover:text-blue-500"
+                          ? "text-custom font-semibold"
+                          : "hover:text-custom"
                       }
                     >
                       {menuItem.title}

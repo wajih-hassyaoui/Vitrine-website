@@ -21,7 +21,7 @@ const Hero = () => {
               <div className="mb-6 space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                   Quality Diesel & Kerosene
-                  <span className="text-blue-600"> Supply</span>
+                  <span className="text-custom"> Supply</span>
                 </h1>
                 <p className="text-muted-foreground text-base">
                   Reliable fuel distribution for industrial, commercial, and
@@ -31,12 +31,12 @@ const Hero = () => {
               </div>
 
               <div className="mt-5 flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button size="lg" className="bg-red-600 hover:bg-red-700">
                   Get Quote
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button variant="outline" size="lg" >
                   <Phone className="mr-2 h-4 w-4" />
-                  Call Now
+                  Contact Us
                 </Button>
               </div>
 
